@@ -1,13 +1,59 @@
-.pokemon-card {
+/* 
+╔══════════════════════════════════════════════════╗
+║                Curso Front-End                   ║
+║                   Tarea Nº 7                     ║
+╠══════════════════════════════════════════════════╣
+║ Alumno: Alfredo López Allende                    ║
+║ RUT   : XX.XXX.XXX-3                             ║
+║ Fecha Entrega: 24 de junio de 2023               ║
+╚══════════════════════════════════════════════════╝
+*/
+/* Importa un fuente al estilo Pokemon. */
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+/* Estilos para el cuerpo de la página y etiquetas html. */
+body {
+    background-color: yellow;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+h1, h2, h3, p {
+    color: blue;
+    font-size: 50px;
+    text-align: center;   
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+/* Formato para la tarjeta contenedora de los datos de cada pokemon. */
+.pokemon-tarjeta {
     display: inline-block;
+    border: 1px solid blue;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
     text-align: center;
     width: 200px;
 }
-.pokemon-image {
+/* Formato para la imagen de cada pokemon. */
+.pokemon-imagen {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+}
+/* Formato para celulares. */
+@media (max-width: 360px) {
+    h1 { font-size: 30px; }
+    h2 { font-size: 25px; }
+    h3 { font-size: 15px; }
+    .pokemon-tarjeta {
+        margin-left: calc((100% - 200px) / 2);
+    }
 }
