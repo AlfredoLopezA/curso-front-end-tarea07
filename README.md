@@ -13,3 +13,5 @@ El archivo pokemon.js contiene lo siguiente:
     - La constante pokemonContenedor con el nombre del elemento html que será el contenedor de los resultados.
     - La función buscarPokemones que se encarga de ejecutar la petición GET y luego el filtro con los 20 primeros pokemones.
     - Finalmente, la función CrearTarjetaPokemon que crear cada una de las tarjetas de los pokemones filtrados.
+
+Hecho por: Alfredo López A. 
